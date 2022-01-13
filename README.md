@@ -8,15 +8,15 @@ C Program to find path from Start (S) to Destination (D)
 
 <br>
 Example input maze: <br>
-S..#..# <br>
-..##..# <br>
-#..##.D <br>
-#.....# <br>
+S..# <br>
+##.. <br>
+##.. <br>
+#D.. <br>
 
 <br>
 Solution: <br>
 
-S+.#..# <br>
-.+##..# <br>
-#++##+D <br>
-#.++++# <br>
+S++# <br>
+##+. <br>
+##+. <br>
+#D+. <br>
