@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+
+/*
+############################
+Function to take maze input
+############################
+*/
 void inputMaze(char maze[], int maxX, int maxY){
    for(int i=0; i < maxY; i++){
       printf("\n Input row %d: ", i);
@@ -42,6 +48,12 @@ void inputMaze(char maze[], int maxX, int maxY){
       }
    }
 
+
+/*
+############################
+Function to print maze
+############################
+*/
 void printMaze(char maze[], int maxX, int maxY){
    for(int i=0; i < maxY; i++){
       for(int j=0; j<maxX; j++) {
@@ -52,6 +64,11 @@ void printMaze(char maze[], int maxX, int maxY){
 }
 
 
+/*
+########################################
+Function to find starting point of maze 
+########################################
+*/
 int findStart(char maze[], int maxX, int maxY){
    int start = -1;
    char s = 'S';
@@ -69,6 +86,12 @@ int findStart(char maze[], int maxX, int maxY){
     
 }
 
+
+/*
+############################################
+DFS algorithm to find maze path from S to D
+############################################
+*/
 int findPath(char maze[], int maxX, int maxY, int x, int y){
    
    char goal = 'D';
@@ -98,6 +121,12 @@ int findPath(char maze[], int maxX, int maxY, int x, int y){
 
 }
 
+
+/*
+############################
+Main function
+############################
+*/
 void main() {
    
    int maxX, maxY, start, xStart, yStart, goalReached;
